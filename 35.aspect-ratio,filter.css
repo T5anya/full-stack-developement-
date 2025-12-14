@@ -17,4 +17,10 @@ opacity()
 saturate()
 sepia()
 
+ASPECT-RATIO
+
+The aspect-ratio property allows you to define the ratio between width and height of an element.
+
+If aspect-ratio and width properties are set, the height will follow in the defined aspect ratio.
+
 */
