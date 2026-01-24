@@ -34,3 +34,16 @@ f=true;//possible in js only
 
 //Type Coercion - jismai aapka ek type dusre type mai convert ho jata hai 
 
+
+typeof(NaN)==='number' //true
+console.log("5"-1)
+console.log("5"+1)
+console.log(5+1)
+console.log("5"*3)
+ console.log(5==='5');
+ console.log('5'==5);
+ console.log(typeof[])
+ console.log(typeof 123n)
+ console.log(typeof null)
+ console.log(typeof 123)
+
