@@ -82,3 +82,12 @@ console.log(5|1);//5
 console.log(b);
 let b = 5;
 //ReferenceError: Cannot access 'b' before initialization
+
+let n=5;
+let result=n++ + ++n;//5+7
+console.log(result)//12
+
+let score=78;
+let grade=score>=90?"A":score>=75?"B":score>=60?"C":"Fail";
+console.log(grade)//B
+
