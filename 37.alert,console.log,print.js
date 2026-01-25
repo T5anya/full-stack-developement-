@@ -12,3 +12,8 @@ print("This is a print message!");
 // In web browsers, 'print' is not defined by default.
 
 
+console.info("this is tanya")
+
+console.warn("this is warning")//Logs warnings, often highlighted in yellow to indicate non-critical issues.
+
+console.error("this will give error")//Logs errors and highlights them in red (in most browsers and tools) to distinguish from normal logs.
