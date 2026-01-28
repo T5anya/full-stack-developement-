@@ -141,26 +141,57 @@ if(num === null ){
  }
 
 
-
-
-
 // Level 2 - Slightly Tougher but Logical
 
 // 11. Allow only 3 attempts to enter correct password
 //     If user gets it right early, stop. If not → "Account locked"
 
-
-
+let correctpass="Tanu@7653;
+let attempts=0;
+let input;
+while(attempts>3){
+    input=prompt("enter the correct password ");
+    if(input===correctpass){
+        console.log("account opened")
+        break;
+    }
+    else{
+        attempts++;
+        console.log(
+        if (attempts>3){
+        console.log("you have ${3-attempts} left");
+        }
+        else{
+        console.log("too many attempts account locked");
+        }
+    }
+}
 
 
 // 12. Ask user for words until they type "stop". Count how many times they typed "yes"
 //     Loop until "stop" is typed. Count "yes".
 
+let input="";
+let count=0;
+while(input!=="stop"){
+   input=prompt("enter a word ");
+   console.log(input);
+   if(input==="yes"){
+      count++;
+   }
+}
+console.log("you typed yes ${count} times");
+
+
 // 13. Print numbers divisible by 7 from 1 to 50
 //     Use modulo % and loop.
 
+
+
 // 14. Sum of all odd numbers from 1 to 30
 //     Add only odd numbers. Print final sum.
+
+
 
 // 15. Keep asking number until user enters an even number
 //     Use while loop. Stop only if input is even.
@@ -218,4 +249,19 @@ for (let i=1;i<=101 ;i++){
     }
   }
   
-}
+//22- ask user to give 5 numbers, now check how many are +ve:
+
+let positiveNum 0;
+let negativeNum = 0;
+for(let i=1; i<=5; i++){
+   value +prompt("give me a number: "); 
+   if(value === 0){
+     console.error("value should not be zero");
+     break;
+   }
+   else{
+      if(value < 0) negativeNum++;
+      else positiveNum++;
+    }
+console.log(positive numbers are ${positiveNum) times");
+
