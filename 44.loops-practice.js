@@ -191,13 +191,30 @@ console.log("you typed yes ${count} times");
 // 14. Sum of all odd numbers from 1 to 30
 //     Add only odd numbers. Print final sum.
 
-
+let sum=0;
+for(let i=1 ;i<31;i++){
+   if(i%2===1){
+      sum=sum+i; 
+   }
+}
+console.log(sum)
 
 // 15. Keep asking number until user enters an even number
 //     Use while loop. Stop only if input is even.
 
+let input=prompt("enter a number");
+while(input%2!===0){
+    input=prompt(enter another even number")!
+}
+
 // 16. Print numbers between two user inputs
 //     Input start and end using prompt() → print all between.
+
+let u1=prompt("enter first input");
+let u2=prompt("enter second input");
+for (let i=u1;i<=u2;i++){
+    console.log(i);
+}
 
 // 17. Print only first 3 odd numbers from 1 to 20
 //     Use loop. Stop with break after 3 odd prints.
@@ -205,10 +222,38 @@ console.log("you typed yes ${count} times");
 // 18. Ask user 5 numbers. Count how many are positive
 //     Use loop + condition + counter.
 
+let posicount=0;
+let count=0;
+while(count>5){
+   let user=prompt("enter a number");
+   if(user>0){
+       posicount++;
+   }
+   count++;
+}
+console.log("${posicount} out of 5 are positive");
+
+
 // ATM Simulator - Allow 3 withdrawals
 // Start with ₹1000 balance. Ask withdrawal amount 3 times.
 // If enough balance → deduct
 // Else → print "Insufficient balance"
+
+let drawnamount;
+let balance=1000;
+let withdrawls=1;
+while(withdrawls=<3){
+    drawnamount=prompt("enter withdrawal amount);
+    if(balance>=drawnamount){
+        let balance=balance-draw amount;
+        console.log("remaining amount is ${balance}");
+    }
+    else{
+        console.log(insufficient balance");
+    }
+    withdrawls++;
+}
+
 
 //19-
 //write a loop form 1 to 100
