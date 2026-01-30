@@ -310,3 +310,148 @@ for(let i=1; i<=5; i++){
     }
 console.log(positive numbers are ${positiveNum) times");
 
+//23. Print factorial of a number.
+
+let num=8;
+let fact=1;
+for(let i=1;i<=num;i++){
+    fact=fact*i;
+}
+console.log(fact); // Outputs: 40320
+
+//24. Print Fibonacci series up to n terms.
+
+let n=10;
+let a=0,b=1;
+console.log(a);
+console.log(b);
+while(i<=n){
+    let next=a+b;
+    console.log(next);
+    a=b;
+    b=next;
+}
+// Outputs: 0 1 1 2 3 5 8 13 21 34
+
+//25.Count the number of digits in a given number.
+
+let numb=32323;
+let count=0;
+while(numb!=0){
+    numb1=Math.floor(numb/10);
+    count++;
+    numb=numb1;
+}
+console.log(count); // Outputs: 5
+
+//26. Calculate the sum of digits of a number.
+
+let number=12345;
+let sum=0;
+while(number!=0){
+    let digit=number%10;
+    sum=sum+digit;
+    number=Math.floor(number/10);
+}
+console.log(sum); // Outputs: 15
+
+//27- Reverse a given number. 12345 → 54321
+
+let numm=12345;
+let reversed=0;
+while(numm!=0){
+    digit1=numm%10;
+    reversed=reversed*10+digit1;
+    numm=Math.floor(numm/10);
+}
+console.log(reversed); // Outputs: 54321
+
+//28.Check if a number is a palindrome.
+
+let palin=121;
+let original=palin;
+let rev=0;
+while(plain!=0){
+    let digit2=palin%10;
+    rev=rev*10+digit2;
+    palin=Math.floor(palin/10);
+
+}
+if(rev===original){
+    console.log("palindrome");
+}
+else{
+    console.log("not a palindrome");
+}
+// Outputs: palindrome
+
+//29.Check if a number is an Armstrong number.
+
+let arm=153;
+let originalArm=arm;
+let sumArm=0;
+while(arm!=0){
+    let digit3=arm%10;
+    sumArm=sumArm+(digit3**3);
+    arm=Math.floor(arm/10);
+}
+if(sumArm===originalArm){
+    console.log("Armstrong number");
+}
+else{
+    console.log("Not an Armstrong number");
+}
+// Outputs: Armstrong number
+
+//30.Print all prime numbers from 1 to 100.
+
+for (let num = 2; num <= 100; num++) {
+  let isPrime = true;
+
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      isPrime = false;
+      break;
+    }
+  }
+
+  if (isPrime) {
+    console.log(num);
+  }
+}
+// Outputs: 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
+
+ //31.Check if a number is prime or not.
+
+let num=7;
+let isPrime=true;
+for(let i=2;i<=Math.sqrt(num);i++){
+    if(num%i==0){
+        isPrime=false;
+        break;
+    }
+}
+if(isPrime){
+    console.log(num + " is prime");
+}
+else{
+    console.log(num + " is not prime");
+}   
+
+//32.Find the sum of even and odd digits separately.
+
+let number=123456;
+let evenSum=0;
+let oddSum=0;
+while(number>0){
+    let digit=number%10;
+    if(digit%2==0){
+        evenSum+=digit;
+    }
+    else{
+        oddSum+=digit;
+    }
+    number=Math.floor(number/10);
+}
+console.log("Even sum: " + evenSum);
+console.log("Odd sum: " + oddSum);
