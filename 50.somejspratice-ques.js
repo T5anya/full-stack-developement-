@@ -68,3 +68,27 @@ for(let i=1; i<=50;i++){
         console.log("fizzbuzz")
     }
 }
+
+
+// 6️⃣-write a function filteranddouble that
+// takes an array of numbers as a parameter
+//filter out all odd numbers
+//double each of remaining numbers
+//returns a new array
+
+let arr=[1,85,3,5,22,200,5,45,66]
+
+function filteranddouble(nums){
+
+ let even=nums.filter(function(val){
+    return val%2==0;
+});
+ let double=nums.map(function(val){
+    return val*2;
+});
+ return double;
+}
+let result=filteranddouble(arr);
+console.log(result);
+
+    
