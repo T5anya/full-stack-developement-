@@ -1,0 +1,35 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 60px;
+    margin-top:50vh;
+    font-size: 5vh;
+}
+
+.count{
+    padding: 10px;
+    font-size: 4vh;
+}
+
+.btn1{
+    font-size: 4vh;
+    margin-right: 30px;
+    border: none;
+    padding: 15px;
+    cursor:pointer;
+}
+.btn2{
+ font-size: 4vh;
+border: none;
+    padding: 15px;
+    cursor:pointer;
+}
